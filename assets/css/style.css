@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+/* home page */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.font {
+    color: #F16232;
+
+}
+nav ul {
+list-style: none;
+display: flex;
+
+}
+nav ul li a{
+color: black;
+padding: 10px;
+}
+nav a{
+text-decoration: none;
+}
+nav a:hover{
+color:white;
+background: #F16232;
+
+}
+#home_nav a{
+color: white;
+background: #F16232;
+text-decoration: none;
+padding : 10px;
+margin: 15px;
+}
+#home_nav{
+display: flex;
+margin-top: 60px;
+
+}
+#h1{
+    margin-top: 60px;
+}
+
+
+/* //register page */
+#reg{
+    background:#eee;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+#reg_ul{
+    list-style: none;
+    margin: 50px;
+    padding: 20px;
+}
+#reg_ul li{
+    display: flex;
+    padding:5px 0;
+}
+#reg_ul li label{
+    flex-grow: 1;
+    padding: 0 5px;
+    font-size: 17px;
+}
+
+#btn{
+    width:100%;
+    padding:10px 0;
+    color:white;
+    background: #F16232;
+    border:none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+#btn:hover{
+    opacity:0.8;
+}
+#form{
+    width: 600px;
+    height: 300px;
+    box-shadow: 0 0 10px gray;
+    background-color: #eee;
+    padding: 20px;
+}
+#reg_ul li input{
+    width: 280px;
+    font-size: 17px;
+}
+.font{
+  color: #F16232;
+}
+
+/* profile page */
+table{
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid #ddd;
+    padding : 12px;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+table tr:hover {
+    background: #ddd;
+}
+th {
+    color:white;
+    background : #04AA6D;
+}
+.font {
+            color: #F16232;
+
+        }
+    nav ul {
+        list-style: none;
+        display: flex;
+    
+    }
+    nav ul li a{
+        color: black;
+        padding: 10px;
+    }
+    nav a{
+        text-decoration: none;
+    }
+    nav a:hover{
+        color:white;
+        background: #F16232;
+
+    }
+   div a{
+       color: white;
+       background: #F16232;
+       text-decoration: none;
+       padding : 10px;
+       margin: 5px;
+   }
+   div{
+       display: flex;
+
+   }
+   #action a{
+     padding: 10px;
+     text-decoration: none;
+     color: black;
+   }
+.action a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+   /* index page */
+
+.container{
+    /* height: 550px; */
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px gray;
+    padding: 20px;
+}
+
+.container div{
+    padding: 5px 0;
+    display: flex;
+}
+#btn2{
+    color: white;
+    background: #F16232;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 350px;
+    margin-top: 10px;
+}
+.container div label{
+   flex: 1;
+}
+.container div input{
+    flex: 3;
+    padding: 3px;
+    font-size: 18px;
+}
+
+.fas {
+    cursor: pointer;
+}
+
+.maction{
+    display: none;
+}
+
+/* flash messages */
+div.messages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul.messages {
+    list-style: none;
+    min-width: 600px;
+    max-width: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px;
+  }
+  
+  ul.messages * {
+    padding: 8px 12px;
+  }
+  
+  .messages .error {
+    background-color: #f87171;
+  }
+  .messages .success {
+    background-color: #6ee7b7;
+  }
+  .messages .warning {
+    background-color: #fcd34d;
+  }
+  .messages .info {
+    background-color: #93c5fd;
+  }
+
+  /* .messages .error {
+    background-color: #FFBABA;
+    color :#D8001C;
+  }
+  .messages .success {
+    background-color: #FEEFB3;
+    color :#4F8A10;
+  }
+  .messages .warning {
+    background-color: #fcd34d;
+  }
+  .messages .info {
+    background-color: #D9EDF7;
+    color :#31708F;
+  } */
+
+  @media only screen and (max-width: 950px){
+    nav ul li a{
+        padding: 5px;
+        margin: 2px;
+        font-size: 13.5px;
+    }
+    nav{
+        align-items: center;
+    }
+    body{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+   *{
+       margin: 0;
+       padding: 0;
+       margin-top: 10px;
+   }
+   #h1{
+       font-size: 28px;
+       margin-top: 20px;
+   }
+   .user_details{
+       font-size: 15px;
+   }
+   ul.messages {
+    list-style: none;
+    min-width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 16px;
+   }
+   #form{
+    width: 350px;
+    box-shadow: 0 0 10px gray;
+    background-color: #eee;
+    padding: 20px;
+    min-height: 450px;
+    margin: 5px;
+   }
+   #reg_ul li input{
+    width: 320px;
+    padding:4px ;
+}
+#reg_ul{
+    margin: 0px;
+    padding: 0px;
+}
+#reg_ul li{
+    margin: 0px;
+}
+
+#reg_ul li label{
+    padding: 0;
+    font-size: medium;
+ 
+}
+#reg_ul {
+    flex-grow: 2;
+    padding: 2px;
+    justify-content: center;
+    /* max-width: 270px; */
+}
+#reg_ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+/* leads page */
+
+.container{
+    width: 350px;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+.container div{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+#btn2{
+   
+    padding: 10px 0;
+    width: 100px;
+    margin-left: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container div input{
+    width: 300px;
+}
+/* td,th{
+    padding : 10px 5px ;
+}
+table {
+   display: flex;
+   justify-content: center;
+   max-width: 300px;
+} */
+
+/* table  */
+ table, th, td, tr{
+        display: block;
+    }
+
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid #dee2e6;}
+
+    td{
+        border: none;
+        position: relative;
+    }
+    table th{
+        display: none;
+    }
+   table tr{
+       display: flex;
+       flex-direction: column;
+       /* border: 1px solid black; */
+       padding: 40px;
+   }
+   table tr td{
+       padding: 5px 10px ;
+   }
+   .id{
+    background-color: #2b2d42;
+    color:white;
+   }
+  table tr .action{
+     display: none;
+  }
+  .maction{
+      display: block;
+  }
+  .maction a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  .maction a{
+   padding: 10px;
+   text-decoration: none;
+   color: black;
+ }
+ table{
+     margin-bottom: 40px;
+ }
+} 

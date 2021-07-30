@@ -1,0 +1,26 @@
+<%- include('include/header') %>
+
+
+
+<h1 class="font" id="h1">Fershu India</h1>
+
+<!-- <div id="home_nav">
+    
+    <a href="/register">Register Here</a><br>
+    <a href="/login">Login Here</a>
+
+</div> -->
+<div>
+   
+</div>
+<div class="user_details" style="display: flex; flex-direction: column; text-align: center; ">
+    <% if (user) { %>
+        <h2 style="color: rgb(75, 74, 74);">Dear <%= user.name %> </h2>   
+        <h2 style="color: rgb(73, 73, 73);">Welcome To Fershu India Team Lead</h2>
+     <% } else {%>
+        <h2 style="color: gray;">Please Login to Proceed Further</h2>
+    <% } %>
+</div>
+
+
+<%- include('include/footer') %>

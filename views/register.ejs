@@ -1,0 +1,38 @@
+<%- include('include/header') %>
+
+<body id="reg">
+    <h1 class="font" id="h1">Register Here</h1>
+    <form id="form" action="/register" method="POST">
+        
+        <ul id="reg_ul">
+           <li>
+               <label for="">Name</label>
+               <input type="text" name="name" value="<%= locals.name ? name : '' %> " autocomplete='off'>
+           </li>
+           <li>
+            <label for="">Email</label>
+            <input type="text" name="email" value="<%= locals.email ? email : '' %> " autocomplete='off'>
+        </li>
+        <li>
+            <label for="">Phone Number</label>
+            <input type="text" name="phone" value="<%= locals.phone ? phone : '' %> " autocomplete='off'>
+        </li>
+        <li>
+            <label for="">Password</label>
+            <input type="text" name="password"  autocomplete='off'>
+        </li>
+        <li>
+            <label for="">Confirm Password</label>
+            <input type="text" name="password2"  autocomplete='off'>
+        </li>
+        <li>
+            <button id='btn' type="Submit">Register</button>
+        </li>
+       </ul>
+ </form>
+  <a href="/login"> <h4> Already Have An Account ? Login</h4></a>
+
+  <div>
+    <a href="/">Back To Home</a>
+ </div>
+  <%- include('include/footer') %>

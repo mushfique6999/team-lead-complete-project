@@ -1,0 +1,25 @@
+<%- include('include/header') %>
+
+<h1 id="h1" class="font">Login Here</h1>
+    <form id="form"  action="/login" method="POST">
+       
+       <ul id="reg_ul" class="form2">
+           <li>
+            <label for="">Email</label>
+            <input type="text" name="email"  autocomplete='off'>
+        </li>
+        <li>
+            <label for="">Password</label>
+            <input type="text" name="password"  autocomplete='off'>
+        </li>
+        <li>
+            <button id='btn'  type="Submit">Login</button>
+        </li>
+       </ul>
+ </form>
+  <a href="/register"> <h4> Doesn't Have An Account ? Register Here</h4></a>
+
+  <div>
+    <a href="/">Back To Home</a>
+ </div>
+  <%- include('include/footer') %>

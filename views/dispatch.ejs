@@ -1,0 +1,54 @@
+<%- include('include/header') %>
+    <table>
+        <thead>
+        <tr>
+            <th >ID</th>
+            <th>Name</th>
+            <th>Article</th>
+            <th>Color</th>
+            <th>Sole</th>
+            <th>Size</th>
+            <th>Price</th>
+            <th>Dispatch Date</th>
+            <th>Courier Company </th>
+            <th>Courier Ref</th>
+            <th>Remarks</th>
+            <th colspan="2">Action</th>
+        </tr>
+    </thead>
+<% for(var i = 0; i < user.length; i++) { %>
+    <tr>
+        <td class="id"><%= i + 1 %></td>
+        <td><%= user[i].name %></td>
+        <td><%= user[i].article %></td>
+        <td><%= user[i].color %></td>
+        <td><%= user[i].sole %></td>
+        <td><%= user[i].size %></td>
+        <td><%= user[i].price %></td>
+        <td><%= user[i].dispatch_date %></td>
+        <td><%= user[i].courier_company %></td>
+        <td><%= user[i].courier_ref %></td>
+        <td><%= user[i].remarks %></td>
+        <td class="maction" >
+            <a href="update-profile/<%= user[i]._id%>" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+            <a href="/delete/<%= user[i]._id%>">
+                <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+            </a>
+        </td>
+        <td class="action">
+            <a href="/update-dispatch/<%= user[i]._id%> " >
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+        </td>
+        <td class="action">
+            <a href="/delete/<%= user[i]._id%>">
+                <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+            </a>
+        </td>
+    </tr>
+    <% } %>
+
+    </table>
+    <%- include('include/footer') %>

@@ -1,0 +1,49 @@
+<%- include('include/header') %>
+
+    <table>
+        <thead>
+        <tr>
+            <th >ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Pincode</th>
+            <th>State</th>
+            <th colspan="2">Action</th>
+        </tr>
+    </thead>
+<% for(var i = 0; i < user.length; i++) { %>
+    <tr>
+        <td class="id"><%= i + 1 %></td>
+        <td><%= user[i].name %></td>
+        <td><%= user[i].email %></td>
+        <td><%= user[i].mobile %></td>
+        <td><%= user[i].address %></td>
+        <td><%= user[i].city %></td>
+        <td><%= user[i].pincode %></td>
+        <td><%= user[i].state %></td>
+        <td class="maction" >
+            <a href="update-profile/<%= user[i]._id%>" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+            <a href="/delete/<%= user[i]._id%>">
+                <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+            </a>
+        </td>
+        <td class="action">
+            <a href="update-profile/<%= user[i]._id%>" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+        </td>
+        <td class="action">
+            <a href="/delete/<%= user[i]._id%>">
+                <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+            </a>
+        </td>
+    </tr>
+    <% } %>
+
+    </table>
+    <%- include('include/footer') %>

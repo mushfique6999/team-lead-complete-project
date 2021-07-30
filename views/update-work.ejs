@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fershu India</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+/* home page */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+}
+
+.font {
+    color: #F16232;
+
+}
+nav ul {
+list-style: none;
+display: flex;
+
+}
+nav ul li a{
+color: black;
+padding: 10px;
+}
+nav a{
+text-decoration: none;
+}
+nav a:hover{
+color:white;
+background: #F16232;
+
+}
+#home_nav a{
+color: white;
+background: #F16232;
+text-decoration: none;
+padding : 10px;
+margin: 15px;
+}
+#home_nav{
+display: flex;
+margin-top: 60px;
+
+}
+#h1{
+    margin-top: 60px;
+}
+
+/* //register page */
+#reg{
+    background:#eee;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+#reg_ul{
+    list-style: none;
+    background: #eee;
+    margin: 50px;
+    padding: 20px;
+}
+#reg_ul li{
+    display: flex;
+    padding:5px 0;
+}
+#reg_ul li label{
+    flex-grow: 1;
+    padding: 0 5px;
+    font-size: 17px;
+}
+
+#btn{
+    width:100%;
+    padding:10px 0;
+    color:white;
+    background: #F16232;
+    border:none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+#btn:hover{
+    opacity:0.8;
+}
+#form{
+    width: 600px;
+    height: 300px;
+    box-shadow: 0 0 10px gray;
+    padding: 20px;
+}
+#reg_ul li input{
+    width: 280px;
+    font-size: 17px;
+}
+.font{
+  color: #F16232;
+}
+
+/* profile page */
+table{
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid #ddd;
+    padding : 12px;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+table tr:hover {
+    background: #ddd;
+}
+th {
+    color:white;
+    background : #04AA6D;
+}
+.font {
+            color: #F16232;
+
+        }
+        nav ul {
+        list-style: none;
+        display: flex;
+    
+    }
+    nav ul li a{
+        color: black;
+        padding: 10px;
+    }
+    nav a{
+        text-decoration: none;
+    }
+    nav a:hover{
+        color:white;
+        background: #F16232;
+
+    }
+   div a{
+       color: white;
+       background: #F16232;
+       text-decoration: none;
+       padding : 10px;
+       margin: 5px;
+   }
+   div{
+       display: flex;
+
+   }
+   #action a{
+     padding: 10px;
+     text-decoration: none;
+     color: black;
+   }
+
+   /* index page */
+
+.container{
+    /* height: 550px; */
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px gray;
+    padding: 20px;
+}
+
+.container div{
+    padding: 5px 0;
+    display: flex;
+}
+#btn2{
+    color: white;
+    background: #F16232;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 350px;
+    margin-top: 10px;
+}
+.container div label{
+   flex: 1;
+}
+.container div input{
+    flex: 3;
+    padding: 3px;
+    font-size: 18px;
+}
+div.messages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.messages {
+  list-style: none;
+  min-width: 600px;
+  max-width: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 16px;
+}
+
+ul.messages * {
+  padding: 8px 12px;
+}
+
+.messages .error {
+  background-color: #f87171;
+}
+.messages .success {
+  background-color: #6ee7b7;
+}
+.messages .warning {
+  background-color: #fcd34d;
+}
+.messages .info {
+  background-color: #93c5fd;
+}
+
+@media only screen and (max-width: 950px){
+    nav ul li a{
+        padding: 5px;
+        margin: 2px;
+        font-size: 15px;
+    }
+    nav{
+        align-items: center;
+    }
+    body{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+   *{
+       margin: 0;
+       padding: 0;
+       margin-top: 10px;
+   }
+   #h1{
+       font-size: 28px;
+       margin-top: 20px;
+   }
+   .user_details{
+       font-size: 15px;
+   }
+   ul.messages {
+    list-style: none;
+    min-width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px;
+   }
+   #form{
+    width: 350px;
+    box-shadow: 0 0 10px gray;
+    background-color: #eee;
+    padding: 20px;
+    min-height: 450px;
+    margin: 5px;
+   }
+   #reg_ul li input{
+    width: 320px;
+    padding:4px ;
+}
+#reg_ul{
+    margin: 0px;
+    padding: 0px;
+}
+#reg_ul li{
+    margin: 0px;
+}
+
+#reg_ul li label{
+    padding: 0;
+    font-size: medium;
+ 
+}
+#reg_ul {
+    flex-grow: 2;
+    padding: 2px;
+    justify-content: center;
+    /* max-width: 270px; */
+}
+#reg_ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+/* leads page */
+
+.container{
+    width: 350px;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+.container div{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+#btn2{
+   
+    padding: 10px 0;
+    width: 100px;
+    margin-left: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container div input{
+    width: 300px;
+}
+td,th{
+    padding : 10px 5px ;
+}
+table {
+   display: flex;
+   justify-content: center;
+   max-width: 300px;
+}
+    </style>
+</head>
+<body>
+    
+<%- include('include/navbar') %>
+<%- include('include/flash') %> 
+
+<form class="updates" action="/update-work/:_id " method="POST">
+    <div class="container">
+        <h2 style="text-align: center;" class="font">Update Work Order</h2>
+        <div>
+            <label for="">Name</label>
+            <input type="hidden" name="_id" value="<%= data._id %>">
+            <input type="text" name="name" value="<%= data.name %> ">
+        </div>
+       <div>
+        <label for="">Article</label>
+        <input type="text" name="article" value="<%= data.article %> ">
+       </div>
+        <div>
+            <label for="">Color</label>
+            <input type="text" name="color" value="<%= data.color %> ">
+        </div>
+       <div>
+        <label for="">Sole</label>
+        <input type="text" name="sole" value="<%= data.sole %> ">
+       </div>
+        <div>
+            <label for="">Size</label>
+            <input type="text" name="size" value="<%= data.size %> ">
+        </div>
+        <div>
+            <label for="">Price</label>
+            <input type="text" name="price" value="<%= data.price %> ">
+        </div>
+       <div>
+        <label for="">Remarks</label>
+        <input type="text" name="remarks" value="<%= data.remarks %> ">
+       </div>
+        <input type="submit" id="btn2" value="Update" >
+    </div>
+    
+   
+  
+</form>
+
+<%- include('include/footer') %>
